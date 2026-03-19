@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEXUS Tech Agency - Building the Future with Web, Mobile & AI. Modern software development studio for startups and enterprises.">
+  <meta name="keywords" content="web development, mobile apps, AI solutions, software agency, tech startup">
+  <title>NEXUS Tech Agency | Web, Mobile & AI Development</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
+</head>
+<body class="bg-bg text-fg antialiased">
+  <!-- Particle background -->
+  <div id="particles" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+  
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#home" class="flex items-center gap-3 group logo-hover">
+          <img src="assets/nexus-logo.jpeg" alt="NEXUS Logo" width="40" height="40" class="rounded-full transition-transform duration-300 group-hover:scale-110">
+          <span class="font-display font-bold text-xl tracking-tight">NEXUS</span>
+        </a>
+        
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#home" class="nav-link font-medium active" data-section="home">Home</a>
+          <a href="#services" class="nav-link font-medium" data-section="services">Services</a>
+          <a href="#solutions" class="nav-link font-medium" data-section="solutions">Solutions</a>
+          <a href="#portfolio" class="nav-link font-medium" data-section="portfolio">Portfolio</a>
+          <a href="#contact" class="nav-link font-medium" data-section="contact">Contact</a>
+        </div>
+        
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-muted hover:text-fg transition-colors" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden glass">
+      <div class="px-4 py-6 space-y-4">
+        <a href="#home" class="block py-2 text-fg font-medium mobile-menu-link">Home</a>
+        <a href="#services" class="block py-2 text-muted hover:text-fg transition-colors mobile-menu-link">Services</a>
+        <a href="#solutions" class="block py-2 text-muted hover:text-fg transition-colors mobile-menu-link">Solutions</a>
+        <a href="#portfolio" class="block py-2 text-muted hover:text-fg transition-colors mobile-menu-link">Portfolio</a>
+        <a href="#contact" class="block py-2 text-muted hover:text-fg transition-colors mobile-menu-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <div class="hero-gradient"></div>
+    <div class="grid-pattern absolute inset-0"></div>
+    
+    <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-dim/5 rounded-full blur-3xl animate-pulse"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="reveal">
+        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium mb-8">
+          <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+          Development Agency for Web, Mobile & AI
+        </span>
+      </div>
+      
+      <h1 class="reveal reveal-delay-1 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+        Building the Future with<br>
+        <span class="text-accent glow-text">Web, Mobile & AI</span>
+      </h1>
+      
+      <p class="reveal reveal-delay-2 text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10">
+        NEXUS Tech Agency builds scalable digital solutions for startups and enterprises. Transform your vision into reality with cutting-edge technology.
+      </p>
+      
+      <div class="reveal reveal-delay-3 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="btn-primary text-base"><span>Start a Project</span></a>
+        <a href="#portfolio" class="btn-secondary text-base">View Portfolio</a>
+      </div>
+      
+      <div class="reveal reveal-delay-4 grid grid-cols-2 sm:grid-cols-4 gap-8 mt-20 pt-10 border-t border-border/50">
+        <div class="text-center">
+          <div class="font-display text-3xl sm:text-4xl font-bold text-fg counter" data-target="3">0</div>
+          <div class="text-muted text-sm mt-1">Projects Delivered</div>
+        </div>
+        <div class="text-center">
+          <div class="font-display text-3xl sm:text-4xl font-bold text-fg counter" data-target="1">0</div>
+          <div class="text-muted text-sm mt-1">Happy Clients</div>
+        </div>
+        <div class="text-center">
+          <div class="font-display text-3xl sm:text-4xl font-bold text-fg counter" data-target="5">0</div>
+          <div class="text-muted text-sm mt-1">Team Experts</div>
+        </div>
+        <div class="text-center">
+          <div class="font-display text-3xl sm:text-4xl font-bold text-fg counter" data-target="1">0</div>
+          <div class="text-muted text-sm mt-1">Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Marquee -->
+  <section class="relative py-16 border-y border-border/50 overflow-hidden bg-bg-secondary/50">
+    <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-bg to-transparent z-10"></div>
+    <div class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-bg to-transparent z-10"></div>
+    
+    <div class="flex overflow-hidden">
+      <div class="marquee-track flex items-center gap-16 whitespace-nowrap">
+        <div class="flex items-center gap-3 text-muted hover:text-fg transition-colors cursor-pointer">
+          <img src="assets/est.png" alt="Est-Kh" class="w-8 h-8 rounded">
+          <span class="font-display font-semibold text-lg">Est-Kh</span>
+        </div>
+        <div class="flex items-center gap-3 text-muted hover:text-fg transition-colors cursor-pointer">
+          <img src="assets/unistay.jpeg" alt="Unistay" class="w-8 h-8 rounded">
+          <span class="font-display font-semibold text-lg">Unistay</span>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="flex items-center gap-3 text-muted hover:text-fg transition-colors cursor-pointer">
+          <img src="assets/est.png" alt="Est-Kh" class="w-8 h-8 rounded">
+          <span class="font-display font-semibold text-lg">Est-Kh</span>
+        </div>
+        <div class="flex items-center gap-3 text-muted hover:text-fg transition-colors cursor-pointer">
+          <img src="assets/unistay.jpeg" alt="Unistay" class="w-8 h-8 rounded">
+          <span class="font-display font-semibold text-lg">Unistay</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="relative py-24 lg:py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="reveal">
+            <span class="text-accent font-medium text-sm uppercase tracking-wider">About Us</span>
+            <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+              We Build Digital<br>Products That Matter
+            </h2>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <p class="text-muted text-lg leading-relaxed mb-6">
+              NEXUS Tech Agency is a modern software development studio specializing in web applications, mobile apps, and artificial intelligence solutions.
+            </p>
+            <p class="text-muted text-lg leading-relaxed">
+              We partner with ambitious startups and forward-thinking enterprises to transform ideas into exceptional digital experiences that drive growth and innovation.
+            </p>
+          </div>
+          
+          <div class="reveal reveal-delay-2 grid sm:grid-cols-3 gap-6 mt-10">
+            <div class="text-center p-6 rounded-xl bg-card/50 border border-border/50">
+              <div class="w-12 h-12 mx-auto mb-4 rounded-lg bg-accent/10 flex items-center justify-center">
+                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-semibold text-lg mb-2">Performance</h3>
+              <p class="text-muted text-sm">Lightning-fast applications optimized for speed</p>
+            </div>
+            
+            <div class="text-center p-6 rounded-xl bg-card/50 border border-border/50">
+              <div class="w-12 h-12 mx-auto mb-4 rounded-lg bg-accent/10 flex items-center justify-center">
+                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-semibold text-lg mb-2">Innovation</h3>
+              <p class="text-muted text-sm">Cutting-edge solutions for tomorrow's challenges</p>
+            </div>
+            
+            <div class="text-center p-6 rounded-xl bg-card/50 border border-border/50">
+              <div class="w-12 h-12 mx-auto mb-4 rounded-lg bg-accent/10 flex items-center justify-center">
+                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="font-display font-semibold text-lg mb-2">Security</h3>
+              <p class="text-muted text-sm">Enterprise-grade protection for your data</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reveal reveal-delay-3 relative">
+          <div class="aspect-square relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl"></div>
+            <div class="absolute inset-4 bg-card rounded-2xl border border-border/50 overflow-hidden">
+              <div class="h-full w-full bg-gradient-to-br from-card to-bg-secondary p-8 flex flex-col justify-center">
+                <div class="space-y-4">
+                  <div class="h-3 bg-accent/20 rounded w-3/4"></div>
+                  <div class="h-3 bg-accent/10 rounded w-1/2"></div>
+                  <div class="h-3 bg-accent/15 rounded w-2/3"></div>
+                </div>
+                <div class="mt-8 grid grid-cols-3 gap-4">
+                  <div class="h-20 bg-accent/5 rounded-lg"></div>
+                  <div class="h-20 bg-accent/10 rounded-lg"></div>
+                  <div class="h-20 bg-accent/5 rounded-lg"></div>
+                </div>
+                <div class="mt-8 flex gap-4">
+                  <div class="h-10 bg-accent/20 rounded-lg flex-1"></div>
+                  <div class="h-10 bg-accent/10 rounded-lg w-24"></div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent/10 rounded-full blur-2xl"></div>
+            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-accent-dim/10 rounded-full blur-2xl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="relative py-24 lg:py-32 bg-bg-secondary/30">
+    <div class="absolute inset-0 grid-pattern opacity-50"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="reveal">
+          <span class="text-accent font-medium text-sm uppercase tracking-wider">Our Services</span>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+            What We Do Best
+          </h2>
+          <p class="text-muted text-lg max-w-2xl mx-auto">
+            Comprehensive digital solutions tailored to your business needs, from concept to deployment.
+          </p>
+        </div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Web Development -->
+        <div class="reveal reveal-delay-1 service-card rounded-2xl p-8 lg:p-10">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
+              <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display text-2xl font-bold mb-2">Web Development</h3>
+              <p class="text-muted">Scalable web solutions for modern businesses</p>
+            </div>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              SaaS Platforms & Dashboards
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              Enterprise Applications
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              E-commerce Solutions
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              API Development & Integration
+            </li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">TypeScript</span>
+          </div>
+        </div>
+        
+        <!-- Mobile Development -->
+        <div class="reveal reveal-delay-2 service-card rounded-2xl p-8 lg:p-10">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
+              <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display text-2xl font-bold mb-2">Mobile Development</h3>
+              <p class="text-muted">Native and cross-platform mobile experiences</p>
+            </div>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              iOS Native Development
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              Android Native Development
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              Cross-Platform Apps
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              App Store Optimization
+            </li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-tag">Swift</span>
+            <span class="tech-tag">Kotlin</span>
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">Flutter</span>
+          </div>
+        </div>
+        
+        <!-- AI Solutions -->
+        <div class="reveal reveal-delay-3 service-card rounded-2xl p-8 lg:p-10">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
+              <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display text-2xl font-bold mb-2">AI Solutions</h3>
+              <p class="text-muted">Intelligent automation and data insights</p>
+            </div>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              Machine Learning Models
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              Predictive Analytics
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              AI Automation Workflows
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              Natural Language Processing
+            </li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">OpenAI</span>
+          </div>
+        </div>
+        
+        <!-- UI/UX Design -->
+        <div class="reveal reveal-delay-4 service-card rounded-2xl p-8 lg:p-10">
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
+              <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-display text-2xl font-bold mb-2">UI/UX Design</h3>
+              <p class="text-muted">Beautiful interfaces that users love</p>
+            </div>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              Product Design Strategy
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              Modern Interface Design
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              User Experience Optimization
+            </li>
+            <li class="flex items-center gap-3 text-muted">
+              <span class="w-1.5 h-1.5 bg-accent rounded-full"></span>
+              Design Systems & Components
+            </li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Framer</span>
+            <span class="tech-tag">Principle</span>
+            <span class="tech-tag">Canva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="relative py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="reveal">
+          <span class="text-accent font-medium text-sm uppercase tracking-wider">Solutions</span>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+            Industry-Specific Solutions
+          </h2>
+          <p class="text-muted text-lg max-w-2xl mx-auto">
+            Tailored approaches for different industries, solving real business challenges.
+          </p>
+        </div>
+      </div>
+      
+      <div class="space-y-8">
+        <!-- Startups -->
+        <div class="reveal solution-card bg-card/50 rounded-2xl border border-border/50 overflow-hidden">
+          <div class="grid lg:grid-cols-3 gap-0">
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm mb-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Startups
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">The Challenge</h3>
+              <p class="text-muted">Limited resources, need for rapid MVP development, and uncertainty about product-market fit.</p>
+            </div>
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50 bg-card/30">
+              <h3 class="font-display text-xl font-bold mb-3">Our Solution</h3>
+              <p class="text-muted">Agile development methodology, lean product approach, and scalable architecture from day one.</p>
+            </div>
+            <div class="p-8 lg:p-10 bg-accent/5">
+              <h3 class="font-display text-xl font-bold mb-3">The Result</h3>
+              <p class="text-muted mb-4">Launch-ready products in 8-12 weeks with 40% cost reduction.</p>
+              <div class="flex items-center gap-4 text-sm">
+                <div><span class="text-accent font-bold text-2xl">8-12</span><span class="text-muted"> weeks</span></div>
+                <div><span class="text-accent font-bold text-2xl">40%</span><span class="text-muted"> savings</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Enterprise -->
+        <div class="reveal reveal-delay-1 solution-card bg-card/50 rounded-2xl border border-border/50 overflow-hidden">
+          <div class="grid lg:grid-cols-3 gap-0">
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm mb-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+                Enterprise
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">The Challenge</h3>
+              <p class="text-muted">Legacy system integration, complex requirements, and need for enterprise-grade security.</p>
+            </div>
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50 bg-card/30">
+              <h3 class="font-display text-xl font-bold mb-3">Our Solution</h3>
+              <p class="text-muted">Microservices architecture, secure API integration, and comprehensive testing frameworks.</p>
+            </div>
+            <div class="p-8 lg:p-10 bg-accent/5">
+              <h3 class="font-display text-xl font-bold mb-3">The Result</h3>
+              <p class="text-muted mb-4">Seamless integration with 99.9% uptime guarantee.</p>
+              <div class="flex items-center gap-4 text-sm">
+                <div><span class="text-accent font-bold text-2xl">99.9%</span><span class="text-muted"> uptime</span></div>
+                <div><span class="text-accent font-bold text-2xl">50%</span><span class="text-muted"> faster</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- E-commerce -->
+        <div class="reveal reveal-delay-2 solution-card bg-card/50 rounded-2xl border border-border/50 overflow-hidden">
+          <div class="grid lg:grid-cols-3 gap-0">
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm mb-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                E-commerce
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">The Challenge</h3>
+              <p class="text-muted">High cart abandonment, slow page loads, and complex inventory management.</p>
+            </div>
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50 bg-card/30">
+              <h3 class="font-display text-xl font-bold mb-3">Our Solution</h3>
+              <p class="text-muted">Performance-optimized storefronts, smart checkout flows, and real-time inventory sync.</p>
+            </div>
+            <div class="p-8 lg:p-10 bg-accent/5">
+              <h3 class="font-display text-xl font-bold mb-3">The Result</h3>
+              <p class="text-muted mb-4">35% increase in conversion rates with sub-second page loads.</p>
+              <div class="flex items-center gap-4 text-sm">
+                <div><span class="text-accent font-bold text-2xl">35%</span><span class="text-muted"> more sales</span></div>
+                <div><span class="text-accent font-bold text-2xl">&lt;1s</span><span class="text-muted"> load time</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FinTech -->
+        <div class="reveal reveal-delay-3 solution-card bg-card/50 rounded-2xl border border-border/50 overflow-hidden">
+          <div class="grid lg:grid-cols-3 gap-0">
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm mb-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                FinTech
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">The Challenge</h3>
+              <p class="text-muted">Regulatory compliance, security requirements, and real-time transaction processing.</p>
+            </div>
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50 bg-card/30">
+              <h3 class="font-display text-xl font-bold mb-3">Our Solution</h3>
+              <p class="text-muted">Compliance-first architecture, encrypted data handling, and scalable payment infrastructure.</p>
+            </div>
+            <div class="p-8 lg:p-10 bg-accent/5">
+              <h3 class="font-display text-xl font-bold mb-3">The Result</h3>
+              <p class="text-muted mb-4">PCI-DSS compliant platforms processing millions in transactions.</p>
+              <div class="flex items-center gap-4 text-sm">
+                <div><span class="text-accent font-bold text-2xl">100%</span><span class="text-muted"> compliant</span></div>
+                <div><span class="text-accent font-bold text-2xl">0</span><span class="text-muted"> breaches</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- AI Products -->
+        <div class="reveal reveal-delay-4 solution-card bg-card/50 rounded-2xl border border-border/50 overflow-hidden">
+          <div class="grid lg:grid-cols-3 gap-0">
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-sm mb-4">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+                AI Products
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3">The Challenge</h3>
+              <p class="text-muted">Complex model deployment, data pipeline management, and user-friendly AI interfaces.</p>
+            </div>
+            <div class="p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-border/50 bg-card/30">
+              <h3 class="font-display text-xl font-bold mb-3">Our Solution</h3>
+              <p class="text-muted">MLOps infrastructure, automated pipelines, and intuitive AI-powered user experiences.</p>
+            </div>
+            <div class="p-8 lg:p-10 bg-accent/5">
+              <h3 class="font-display text-xl font-bold mb-3">The Result</h3>
+              <p class="text-muted mb-4">AI products that scale from prototype to millions of users.</p>
+              <div class="flex items-center gap-4 text-sm">
+                <div><span class="text-accent font-bold text-2xl">10x</span><span class="text-muted"> efficiency</span></div>
+                <div><span class="text-accent font-bold text-2xl">95%</span><span class="text-muted"> accuracy</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="relative py-24 lg:py-32 bg-bg-secondary/30">
+    <div class="absolute inset-0 grid-pattern opacity-50"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="reveal">
+          <span class="text-accent font-medium text-sm uppercase tracking-wider">Portfolio</span>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+            Featured Projects
+          </h2>
+          <p class="text-muted text-lg max-w-2xl mx-auto">
+            Explore our latest work and see how we've helped businesses transform their digital presence.
+          </p>
+        </div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Project 1 -->
+        <div class="reveal reveal-delay-1 group cursor-pointer portfolio-card" onclick="openProjectModal(0)">
+          <div class="relative rounded-2xl overflow-hidden bg-card border border-border/50 transition-all duration-500 hover:border-accent/30 hover:shadow-[0_0_40px_rgba(0,212,255,0.1)]">
+            <div class="aspect-[4/3] relative overflow-hidden">
+              <img src="assets/images/AgriVision/agrivision-preview.png" alt="AgriVision Detect preview" class="absolute inset-0 w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-br from-bg/40 via-bg/10 to-transparent"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold mb-2 project-title">AgriVision Detect</h3>
+              <p class="text-muted text-sm mb-4">AI-powered weed detection mobile app that identifies plant species directly from a smartphone camera.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag text-xs">TensorFlow Lite</span>
+                <span class="tech-tag text-xs">Computer Vision</span>
+                <span class="tech-tag text-xs">Kotlin</span>
+                <span class="tech-tag text-xs">Android</span>
+              </div>
+              <div class="flex items-center text-accent text-sm font-medium group-hover:translate-x-2 transition-transform">
+                View Project
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="reveal reveal-delay-2 group cursor-pointer" onclick="openProjectModal(1)">
+          <div class="relative rounded-2xl overflow-hidden bg-card border border-border/50 transition-all duration-500 hover:border-accent/30 hover:shadow-[0_0_40px_rgba(0,212,255,0.1)]">
+            <div class="aspect-[4/3] relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-accent/10 to-transparent"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-3/4 h-3/4 bg-card/80 rounded-lg border border-border/30 backdrop-blur-sm flex items-center justify-center">
+                  <svg class="w-16 h-16 text-emerald-400/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute inset-0 project-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold mb-2 group-hover:text-accent transition-colors">Mobile FinTech App</h3>
+              <p class="text-muted text-sm mb-4">Secure banking application with biometric authentication and real-time transactions.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag text-xs">React Native</span>
+                <span class="tech-tag text-xs">Node.js</span>
+                <span class="tech-tag text-xs">PostgreSQL</span>
+              </div>
+              <div class="flex items-center text-accent text-sm font-medium group-hover:translate-x-2 transition-transform">
+                View Project
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="reveal reveal-delay-3 group cursor-pointer" onclick="openProjectModal(2)">
+          <div class="relative rounded-2xl overflow-hidden bg-card border border-border/50 transition-all duration-500 hover:border-accent/30 hover:shadow-[0_0_40px_rgba(0,212,255,0.1)]">
+            <div class="aspect-[4/3] relative overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-accent/10 to-transparent"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-3/4 h-3/4 bg-card/80 rounded-lg border border-border/30 backdrop-blur-sm flex items-center justify-center">
+                  <svg class="w-16 h-16 text-purple-400/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="absolute inset-0 project-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold mb-2 group-hover:text-accent transition-colors">E-commerce Platform</h3>
+              <p class="text-muted text-sm mb-4">High-performance online store with AI-powered recommendations and headless CMS.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="tech-tag text-xs">Next.js</span>
+                <span class="tech-tag text-xs">Shopify</span>
+                <span class="tech-tag text-xs">Stripe</span>
+              </div>
+              <div class="flex items-center text-accent text-sm font-medium group-hover:translate-x-2 transition-transform">
+                View Project
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- View All Projects -->
+        <div class="reveal reveal-delay-2 group">
+          <div class="relative rounded-2xl overflow-hidden bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20 h-full flex items-center justify-center min-h-[350px] transition-all duration-500 hover:border-accent/40 hover:shadow-[0_0_60px_rgba(0,212,255,0.15)] cursor-pointer">
+            <div class="text-center p-8">
+              <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-accent/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                </svg>
+              </div>
+              <h3 class="font-display text-xl font-bold mb-2">View All Projects</h3>
+              <p class="text-muted text-sm">Explore our complete portfolio of 50+ projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="relative py-24 lg:py-32">
+    <div class="absolute inset-0 grid-pattern opacity-30"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <div class="reveal">
+            <span class="text-accent font-medium text-sm uppercase tracking-wider">Contact Us</span>
+            <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6">
+              Let's Build Something<br>Amazing Together
+            </h2>
+            <p class="text-muted text-lg mb-10">
+              Ready to transform your idea into reality? Get in touch with our team and let's discuss your project.
+            </p>
+          </div>
+          
+          <div class="reveal reveal-delay-1 space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-display font-semibold mb-1">Email</h3>
+                <a href="mailto:nexus.tech.2k26@gmail.com" class="text-muted hover:text-accent transition-colors contact-link">nexus.tech.2k26@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-display font-semibold mb-1">Location</h3>
+                <p class="text-muted">Morocco</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="reveal reveal-delay-3">
+          <form id="contact-form" class="bg-card/50 rounded-2xl border border-border/50 p-8 lg:p-10">
+            <div class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                <input type="text" id="name" name="name" required class="input-field" placeholder="Your full name">
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                <input type="email" id="email" name="email" required class="input-field" placeholder="your@email.com">
+              </div>
+              
+              <div>
+                <label for="company" class="block text-sm font-medium mb-2">Company</label>
+                <input type="text" id="company" name="company" class="input-field" placeholder="Your company name">
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-medium mb-2">Project Description</label>
+                <textarea id="message" name="message" rows="4" required class="input-field resize-none" placeholder="Tell us about your project..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn-primary w-full text-base">
+                <span>Send Message</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative border-t border-border/50 bg-bg-secondary/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <!-- Logo & Description -->
+        <div class="lg:col-span-1">
+          <a href="#home" class="flex items-center gap-3 mb-6">
+            <svg width="36" height="36" viewBox="0 0 40 40">
+              <polygon fill="none" stroke="#00D4FF" stroke-width="2" points="20,4 36,12 36,28 20,36 4,28 4,12" />
+              <polygon fill="none" stroke="#00D4FF" stroke-width="2" points="20,10 28,14 28,26 20,30 12,26 12,14" opacity="0.6" />
+              <circle cx="20" cy="20" r="4" fill="#00D4FF" />
+            </svg>
+            <span class="font-display font-bold text-lg">NEXUS</span>
+          </a>
+          <p class="text-muted text-sm leading-relaxed">
+            Building the future with innovative web, mobile, and AI solutions.
+          </p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-display font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="#home" class="text-muted hover:text-accent transition-colors text-sm footer-link">Home</a></li>
+            <li><a href="#services" class="text-muted hover:text-accent transition-colors text-sm footer-link">Services</a></li>
+            <li><a href="#solutions" class="text-muted hover:text-accent transition-colors text-sm footer-link">Solutions</a></li>
+            <li><a href="#portfolio" class="text-muted hover:text-accent transition-colors text-sm footer-link">Portfolio</a></li>
+            <li><a href="#contact" class="text-muted hover:text-accent transition-colors text-sm footer-link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h4 class="font-display font-semibold mb-4">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="#services" class="text-muted hover:text-accent transition-colors text-sm footer-link">Web Development</a></li>
+            <li><a href="#services" class="text-muted hover:text-accent transition-colors text-sm footer-link">Mobile Development</a></li>
+            <li><a href="#services" class="text-muted hover:text-accent transition-colors text-sm footer-link">AI Solutions</a></li>
+            <li><a href="#services" class="text-muted hover:text-accent transition-colors text-sm footer-link">UI/UX Design</a></li>
+          </ul>
+        </div>
+        
+        <!-- Social -->
+        <div>
+          <h4 class="font-display font-semibold mb-4">Connect</h4>
+          <div class="flex gap-4 mb-6">
+            <a href="" class="w-10 h-10 rounded-lg bg-card border border-border/50 flex items-center justify-center text-muted hover:text-accent hover:border-accent/50 transition-all social-icon" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="" class="w-10 h-10 rounded-lg bg-card border border-border/50 flex items-center justify-center text-muted hover:text-accent hover:border-accent/50 transition-all social-icon" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="" class="w-10 h-10 rounded-lg bg-card border border-border/50 flex items-center justify-center text-muted hover:text-accent hover:border-accent/50 transition-all social-icon" aria-label="Dribbble">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/></svg>
+            </a>
+          </div>
+          <p class="text-muted text-sm">nexus.tech.2k26@gmail.com</p>
+        </div>
+      </div>
+      
+      <div class="mt-12 pt-8 border-t border-border/50 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-muted text-sm">2024 NEXUS Tech Agency. All rights reserved.</p>
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="text-muted hover:text-accent transition-colors footer-link">Privacy Policy</a>
+          <a href="#" class="text-muted hover:text-accent transition-colors footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="fixed inset-0 z-[100] hidden">
+    <div class="modal-backdrop absolute inset-0" onclick="closeProjectModal()"></div>
+    <div class="relative z-10 w-full h-full overflow-y-auto p-4 sm:p-8">
+      <div class="max-w-4xl mx-auto my-8 bg-card rounded-2xl border border-border/50 overflow-hidden">
+        <div id="modal-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Preloader
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').style.opacity = '0';
+        setTimeout(() => {
+          document.getElementById('preloader').style.display = 'none';
+        }, 500);
+      }, 2000);
+    });
+
+    // Scroll Progress
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset;
+      const docHeight = document.body.offsetHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      document.querySelector('.scroll-progress').style.width = scrollPercent + '%';
+    });
+
+    // Enhanced Particle System
+    function createParticle() {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + 'vw';
+      particle.style.width = Math.random() * 4 + 2 + 'px';
+      particle.style.height = particle.style.width;
+      particle.style.animationDuration = Math.random() * 4 + 4 + 's';
+      particle.style.animationDelay = Math.random() * 2 + 's';
+      document.getElementById('particles').appendChild(particle);
+      
+      setTimeout(() => {
+        particle.remove();
+      }, 6000);
+    }
+
+    setInterval(createParticle, 300);
+
+    // Intersection Observer for Reveal Animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // 3D Tilt Effect
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.classList.add('tilt-card');
+    });
+
+    // Parallax Effect
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * -0.5;
+      document.querySelector('.hero-gradient').style.transform = `translateY(${rate}px)`;
+    });
+
+    // Typing Effect
+    const heroTitle = document.querySelector('.hero-gradient + div + div h1');
+    if (heroTitle) {
+      heroTitle.classList.add('typewriter');
+    }
+
+    // Counter Animation
+    function animateCounter(element, target) {
+      let current = 0;
+      const increment = target / 100;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = target;
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current);
+        }
+      }, 30);
+    }
+
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = parseInt(entry.target.getAttribute('data-target'));
+          animateCounter(entry.target, target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // Magnetic Effect
+    document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+      btn.classList.add('magnetic');
+    });
+
+    // Mobile Menu Toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Navbar Background on Scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('glass');
+      } else {
+        navbar.classList.remove('glass');
+      }
+    });
+
+    // Project Modal (placeholder)
+    function openProjectModal(index) {
+      // Implement modal functionality
+      console.log('Open project modal for project', index);
+    }
+
+    // Project data
+    const projects = [
+      {
+        name: 'AgriVision Detect',
+        description: 'AI-powered weed detection mobile application using computer vision.',
+        fullDescription: 'AgriVision Detect is a mobile AI application that identifies weeds from field images using deep learning. The system runs entirely on-device using TensorFlow Lite, enabling farmers to detect weeds in real time without internet connectivity.',
+        technologies: ['Kotlin', 'TensorFlow Lite', 'MobileNetV2', 'Android Studio', 'CameraX'],
+        challenge: 'Farmers struggle to accurately identify weeds in their fields, leading to excessive herbicide use and crop losses.',
+        solution: 'We developed a mobile AI system that uses a trained computer vision model to detect weed species directly from smartphone camera images.',
+        results: [
+          '88.86% classification accuracy',
+          '<500ms detection time',
+          'Offline inference',
+          '12 plant classes'
+        ],
+        category: 'AI & Computer Vision'
+      },
+      {
+        name: 'Mobile FinTech App',
+        description: 'Secure banking application with biometric authentication and real-time transactions.',
+        fullDescription: 'A next-generation mobile banking application featuring biometric authentication, real-time transaction processing, and AI-powered financial insights.',
+        technologies: ['React Native', 'Node.js', 'PostgreSQL', 'Redis', 'Stripe', 'Plaid'],
+        challenge: 'Building a secure, compliant financial application that also delivers a seamless user experience across iOS and Android.',
+        solution: 'We implemented a cross-platform solution with enterprise-grade security, biometric authentication, and real-time synchronization.',
+        results: ['100% PCI-DSS compliant', '4.8 App Store rating', '100K+ active users'],
+        category: 'FinTech'
+      },
+      {
+        name: 'E-commerce Platform',
+        description: 'High-performance online store with AI-powered recommendations and headless CMS.',
+        fullDescription: 'A scalable e-commerce platform with AI-powered product recommendations, headless CMS for content management, and seamless checkout experience.',
+        technologies: ['Next.js', 'Shopify', 'Stripe', 'Contentful', 'Algolia', 'Vercel'],
+        challenge: 'The client needed to scale their e-commerce operations while maintaining sub-second page loads and increasing conversion rates.',
+        solution: 'We built a headless commerce solution with optimized performance, AI recommendations, and streamlined checkout flow.',
+        results: ['35% increase in conversions', '<1s average page load', '2x revenue growth'],
+        category: 'E-commerce'
+      },
+      {
+        name: 'Startup SaaS Platform',
+        description: 'Complete business management solution with real-time collaboration features.',
+        fullDescription: 'A comprehensive SaaS platform for startups featuring project management, team collaboration, invoicing, and analytics in one unified solution.',
+        technologies: ['Vue.js', 'Firebase', 'WebRTC', 'Stripe', 'Chart.js', 'Docker'],
+        challenge: 'Startups needed an all-in-one solution to manage their operations without juggling multiple expensive tools.',
+        solution: 'We created an integrated platform combining project management, team collaboration, and business analytics with real-time sync.',
+        results: ['500+ startup clients', '60% reduction in tool costs', '$2M+ seed funding raised'],
+        category: 'SaaS'
+      },
+      {
+        name: 'AI Customer Support Bot',
+        description: 'Intelligent chatbot with NLP capabilities and seamless human handoff integration.',
+        fullDescription: 'An AI-powered customer support system using natural language processing to handle inquiries with seamless human agent handoff when needed.',
+        technologies: ['Python', 'OpenAI', 'FastAPI', 'Redis', 'React', 'WebSocket'],
+        challenge: 'Reducing support ticket volume while maintaining high customer satisfaction scores.',
+        solution: 'We developed an NLP-powered bot that handles 80% of inquiries automatically while seamlessly escalating complex issues to human agents.',
+        results: ['80% automation rate', '45% reduction in support costs', '4.7 CSAT score'],
+        category: 'AI & Automation'
+      }
+    ];
+
+    // Initialize particles
+    function initParticles() {
+      const container = document.getElementById('particles');
+      if (!container) return;
+      
+      const particleCount = 50;
+      
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 20 + 's';
+        particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
+        particle.style.animation = `float ${Math.random() * 20 + 10}s linear infinite`;
+        particle.style.opacity = Math.random() * 0.5 + 0.1;
+        container.appendChild(particle);
+      }
+    }
+
+    // Reveal animations on scroll
+    function initRevealAnimations() {
+      const reveals = document.querySelectorAll('.reveal');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+      
+      reveals.forEach(reveal => observer.observe(reveal));
+    }
+
+    // Counter animation
+    function animateCounters() {
+      const counters = document.querySelectorAll('.counter');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const counter = entry.target;
+            const target = parseInt(counter.getAttribute('data-target'));
+            const duration = 2000;
+            const start = performance.now();
+            
+            function update(currentTime) {
+              const elapsed = currentTime - start;
+              const progress = Math.min(elapsed / duration, 1);
+              const easeOut = 1 - Math.pow(1 - progress, 3);
+              counter.textContent = Math.floor(target * easeOut) + '+';
+              
+              if (progress < 1) {
+                requestAnimationFrame(update);
+              }
+            }
+            
+            requestAnimationFrame(update);
+            observer.unobserve(counter);
+          }
+        });
+      }, { threshold: 0.5 });
+      
+      counters.forEach(counter => observer.observe(counter));
+    }
+
+    // Navigation scroll effect
+    function initNavigation() {
+      const navbar = document.getElementById('navbar');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('section[id]');
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      // Scroll effect
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('glass');
+        } else {
+          navbar.classList.remove('glass');
+        }
+        
+        // Active section detection
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('data-section') === current) {
+            link.classList.add('active');
+          }
+        });
+      });
+      
+      // Mobile menu toggle
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Close mobile menu on link click
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // Project modal
+    function openProjectModal(index) {
+      const project = projects[index];
+      const modal = document.getElementById('project-modal');
+      const content = document.getElementById('modal-content');
+      
+      content.innerHTML = `
+        <div class="relative">
+          <button onclick="closeProjectModal()" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-bg/80 border border-border/50 flex items-center justify-center text-muted hover:text-fg transition-colors" aria-label="Close modal">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          
+          <div class="aspect-video overflow-hidden">
+            <img src="assets/images/AgriVision/agrivision-preview.png" class="w-full h-full object-cover" alt="AgriVision hero">
+          </div>
+          
+          <div class="p-8">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="tech-tag">${project.category}</span>
+            </div>
+            
+            <h2 class="font-display text-3xl font-bold mb-4">${project.name}</h2>
+            <p class="text-muted text-lg mb-8">${project.fullDescription}</p>
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <img src="assets/images/AgriVision/app-ui-mockup.png" alt="App interface mockup" class="rounded-lg border border-border/50">
+              <img src="assets/images/AgriVision/phone-icon-mockup.png" alt="Detection summary screen" class="rounded-lg border border-border/50">
+              <img src="assets/images/AgriVision/agrivision-architecture.png" alt="System architecture diagram" class="rounded-lg border border-border/50">
+              <img src="assets/images/AgriVision/agrivision-model.png" alt="Model training visualization" class="rounded-lg border border-border/50">
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+              <div class="bg-bg/50 rounded-xl p-6 border border-border/50">
+                <h3 class="font-display font-semibold mb-3 text-accent">Challenge</h3>
+                <p class="text-muted text-sm">${project.challenge}</p>
+              </div>
+              <div class="bg-bg/50 rounded-xl p-6 border border-border/50">
+                <h3 class="font-display font-semibold mb-3 text-accent">Solution</h3>
+                <p class="text-muted text-sm">${project.solution}</p>
+              </div>
+              <div class="bg-accent/5 rounded-xl p-6 border border-accent/20">
+                <h3 class="font-display font-semibold mb-3 text-accent">Results</h3>
+                <ul class="text-muted text-sm space-y-2">
+                  ${project.results.map(r => `<li class="flex items-start gap-2"><span class="w-1.5 h-1.5 bg-accent rounded-full mt-1.5 shrink-0"></span>${r}</li>`).join('')}
+                </ul>
+              </div>
+            </div>
+            
+            <div>
+              <h3 class="font-display font-semibold mb-4">Technologies Used</h3>
+              <div class="flex flex-wrap gap-2">
+                ${project.technologies.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal() {
+      const modal = document.getElementById('project-modal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Close modal on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeProjectModal();
+      }
+    });
+
+    // Contact form handling
+    function initContactForm() {
+      const form = document.getElementById('contact-form');
+      
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        // Simulate form submission
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span>Sending...</span>';
+        submitBtn.disabled = true;
+        
+        setTimeout(() => {
+          submitBtn.innerHTML = '<span>Message Sent!</span>';
+          submitBtn.classList.add('bg-green-500');
+          
+          setTimeout(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.classList.remove('bg-green-500');
+            submitBtn.disabled = false;
+            form.reset();
+          }, 2000);
+        }, 1500);
+      });
+    }
+
+    // Smooth scroll for anchor links
+    function initSmoothScroll() {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    }
+
+    // Initialize everything
+    document.addEventListener('DOMContentLoaded', () => {
+      initParticles();
+      initRevealAnimations();
+      animateCounters();
+      initNavigation();
+      initContactForm();
+      initSmoothScroll();
+    });
+  </script>
+</body>
+</html>
