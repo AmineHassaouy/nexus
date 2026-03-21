@@ -35,6 +35,17 @@ const projects = [
     category: 'Computer Vision / Mobile'
   },
   {
+    name: 'Dentiste Website',
+    description: 'Modern dental clinic website with appointment booking, service pages, and a clean professional design.',
+    fullDescription: 'A fully responsive dental clinic website designed to establish a strong online presence and streamline patient interactions. Features a polished UI with service breakdowns, doctor profiles, and an intuitive appointment booking flow.',
+    image: 'assets/images/Dentiste-Website/dentiste-mockup.webp',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+    challenge: 'The clinic had no online presence and relied entirely on phone calls for bookings, limiting reach and creating scheduling inefficiencies.',
+    solution: 'We designed and developed a clean, conversion-focused website with a service showcase, doctor profiles, and an appointment request form that integrates with the clinic\'s workflow.',
+    results: ['Fully responsive across all devices', 'Clear service and pricing presentation', 'Online appointment request form'],
+    category: 'Web Development'
+  },
+  {
     name: 'Students-Assistant-Chatbot',
     description: 'AI-powered chatbot that helps students navigate university resources, answer academic questions, and streamline administrative tasks.',
     fullDescription: 'A Retrieval-Augmented Generation (RAG) chatbot built for university students. It indexes institutional documents and FAQs, then answers natural-language questions with accurate, source-grounded responses across web, desktop, and tablet interfaces.',
